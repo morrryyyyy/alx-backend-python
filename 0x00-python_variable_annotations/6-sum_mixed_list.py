@@ -3,7 +3,7 @@
 from typing import List, Union
 
 
-def sum_mxd_list(mxd_list: List[Union[float, int]]) -> float:
+def sum_mxd_list(mxd_list: List[Union[int, float]]) -> float:
     '''
     Adds the elements  of a list.
 
