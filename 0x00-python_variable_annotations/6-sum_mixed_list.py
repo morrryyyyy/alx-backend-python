@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 '''6-sum_mxd_list.py'''
-from typing import List
+from typing import List, Union
 
 
-def sum_mxd_list(mxd_list: List[float, int]) -> float:
+def sum_mxd_list(mxd_list: List[Union[float, int]]) -> float:
     '''
     Adds the elements  of a list.
 
