@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
-'''6-sum_mixed_list'''
-from typing import TypeAlias
-Vector: TypeAlias = list[float, int]
+'''6-sum_mxd_list.py'''
+from typing import List
 
 
-def sum_mixed_list(mxd_list: Vector) -> float:
+def sum_mxd_list(mxd_list: List[float, int]) -> float:
     '''
     Adds the elements  of a list.
 
@@ -14,7 +13,4 @@ def sum_mixed_list(mxd_list: Vector) -> float:
     Returns:
         sum(float): the sum of the elements.
     '''
-    sum = 0
-    for num in mxd_list:
-        sum += num
-    return sum
+    return sum(mxd_list)
