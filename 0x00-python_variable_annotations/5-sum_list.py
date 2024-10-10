@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 '''5-sum_list.py'''
-from typing import TypeAlias
-Vector: TypeAlias = list[float]
+from typing import List
 
 
-def sum_list(input_list: Vector) -> float:
+def sum_list(input_list: List[float]) -> float:
     '''
     Adds the elements  of a list.
 
@@ -14,7 +13,4 @@ def sum_list(input_list: Vector) -> float:
     Returns:
         sum(float): the sum of the elements.
     '''
-    sum = 0
-    for num in input_list:
-        sum += num
-    return sum
+    return sum(input_list)
