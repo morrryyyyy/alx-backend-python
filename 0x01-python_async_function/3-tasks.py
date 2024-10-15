@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """3-tasks"""
 import asyncio
-from typing import Any
 wait_random = __import__('1-concurrent_coroutines').wait_random
 
 
