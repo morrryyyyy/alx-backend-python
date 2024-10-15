@@ -4,7 +4,7 @@ import asyncio
 import random
 
 
-async def wait_random(max_delay=10):
+async def wait_random(max_delay: float=10):
     """
     A coroutine that waits for a while, and returns the amount of time delayed.
 
@@ -14,6 +14,6 @@ async def wait_random(max_delay=10):
     Returns:
     delay(float): the actual waiting time.
     """
-    delay = random.uniform(0, max_delay)
+    delay: int = random.uniform(0, max_delay)
     await asyncio.sleep(delay)
     return delay
