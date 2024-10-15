@@ -5,12 +5,12 @@ from typing import Any
 wait_random = __import__('1-concurrent_coroutines').wait_random
 
 
-def task_wait_random(max_delay: int) -> asyncio.Task[Any]:
+def task_wait_random(max_delay: int) -> asyncio.Task[float]:
     """Creates a task from an existing coroutine.
     Args:
         max_delay(int): the maximum delay time.
     Returns:
-    asyncio.Task[Any]: the task created
+    asyncio.Task[float]: the task created
     """
-    task: asyncio.Task[Any] = asyncio.create_task(wait_random(max_delay))
+    task: asyncio.Task[float] = asyncio.create_task(wait_random(max_delay))
     return task
